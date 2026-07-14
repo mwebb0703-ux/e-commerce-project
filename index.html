@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libary Megan</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/36c3839282.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </head>
 
@@ -18,25 +18,25 @@
         <img class="logo" src="assets/Library.svg" alt="libary logo">
         <ul class="nav__links">
           <li><a href="#" class="nav__link">Home</a></li>
-          <li><a href="#" class="nav__link">Contact</a></li>
-          <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+          <li><a href="#" class="nav__link--no">Contact</a></li>
+          <li><a href="#features" class="nav__link nav__link--primary">Books</a></li>
         </ul>
-        <button class="btn__menu" onclick="openMenu()">
-          <i class="fa-solid fa-bars"></i>
+         <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
         </button>
         <div class="menu__backdrop">
           <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fas fa-times"></i>
           </button>
           <ul class="menu__links">
             <li class="menu__list">
               <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
             </li>
             <li class="menu__list">
-              <a href="#features" class="menu__link" onclick="closeMenu">Books</a>
+              <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
             </li>
             <li class="menu__list">
-              <a class="menu__link no-cursor" href="#contact">Contacts</a>
+              <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@
       <div class="container">
         <div class="row">
           <h2 class="section__title">
-            Why choose <span class="purple">Library</span>
+            Why choose <span class="purple">Library</span>?
           </h2>
           <div class="highlight__wrapper">
             <div class="highlight">
@@ -118,7 +118,7 @@
               <div class="book__title">
                 Crack the Coding Interview
               </div>
-              <figure class="book__Ratings">
+              <figure class="book__ratings">
                  <i class="fa-solid fa-star"></i>
                  <i class="fa-solid fa-star"></i>
                  <i class="fa-solid fa-star"></i>
@@ -192,17 +192,17 @@
       <div class="container">
         <div class="row">
           <h2 class="section__title">
-          Recent <span class="purple"> Books</span>
+          Latest <span class="purple"> Books</span>
           </h2>
           <div class="books">
             <div class="book">
               <figure class="book__img--wrapper">
-                <img src="assets/book-1.jpeg" alt="">
+                <img class="book__img" src="assets/book-1.jpeg" alt="">
               </figure>
               <div class="book__title">
                 The 10X Rule
               </div>
-              <figure class="Book__ratings">
+              <figure class="book__ratings">
                 <i class="fa-solid fa-star"></i>
                  <i class="fa-solid fa-star"></i>
                  <i class="fa-solid fa-star"></i>
@@ -251,7 +251,7 @@
             </div>
             <div class="book">
               <figure class="book__img--wrapper">
-                <img src="assets/book-4.jpeg" alt="">
+                <img class="book__img" src="assets/book-4.jpeg" alt="">
               </figure>
               <div class="book__title">
                 Cashflow Quadrant
@@ -269,7 +269,7 @@
             </div>
             <div class="book">
               <figure class="book__img--wrapper">
-                <img src="assets/book-5.jpeg" alt="">
+                <img class="book__img" src="assets/book-5.jpeg" alt="">
               </figure>
               <div class="book__title">
                 48 Laws of Power
@@ -287,7 +287,7 @@
             </div>
             <div class="book">
               <figure class="book__img--wrapper">
-                <img src="assets/book-6.jpeg" alt="">
+                <img class="book__img" src="assets/book-6.jpeg" alt="">
               </figure>
               <div class="book__title">
                 The 5 Second Rule
@@ -305,7 +305,7 @@
             </div>
             <div class="book">
               <figure class="book__img--wrapper">
-                <img src="assets/book-7.jpg" alt="">
+                <img class="book__img" src="assets/book-7.jpg" alt="">
               </figure>
               <div class="book__title">
                 Your Next Five Moves
@@ -323,7 +323,7 @@
             </div>
             <div class="book">
               <figure class="book__img--wrapper">
-                <img src="assets/book-8.jpeg" alt="">
+                <img class="book__img" src="assets/book-8.jpeg" alt="">
               </figure>
               <div class="book__title">
                 Mastery
@@ -366,7 +366,7 @@
         </a>
         <div class="footer__list">
           <a href="#" class="footer__link">Home</a>
-          <a href="#" class="footer__link no-cursor">About</a>
+          <a href="" class="footer__link no-cursor">About</a>
           <a href="#features" class="footer__link">books</a>
           <a href="#" class="footer__link no-cursor">contact</a>
         </div>

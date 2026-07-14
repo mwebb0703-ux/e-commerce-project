@@ -22,8 +22,6 @@ nav {
 
 img {
   width: 100%;
-  height: 100%;
-  max-height: 50vh;
 }
 
 p {
@@ -57,7 +55,7 @@ h1 {
 
 h2 {
   font-size: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -105,6 +103,10 @@ button:active {
   padding: 8px;
 }
 
+.nav__link--no {
+  cursor: not-allowed;
+}
+
 .nav__link:hover {
   text-decoration: underline;
 }
@@ -143,12 +145,12 @@ button:active {
   transform: translate(100%);
 }
 
-.menu-open {
+.menu--open {
   max-height: 100vh;
   overflow: hidden;
 }
 
-.menu-open .menu__backdrop {
+.menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
   transform: translate(0);
@@ -193,6 +195,7 @@ header {
 }
 
 .header__container {
+  padding-top: 24px;
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
@@ -210,7 +213,7 @@ header {
 
 .header__img--wrapper {
   padding: 20px;
-  z-index: 50;
+  z-index: 2;
 }
 
 
@@ -330,7 +333,7 @@ Features
 .book__img {
   max-height: 380px;
   transform: all 300ms ease;
-  cursor: not-allowed;
+  cursor: no-drop;
 }
 
 .book__img--wrapper {
@@ -346,17 +349,19 @@ Features
 
 .book__title {
   font-size: 20px;
-  color: #fabf2a;
+  margin-bottom: 8px;
+  color: #242424;
 }
 
 .book__title:hover {
   text-decoration: underline;
-  cursor: not-allowed;
+  cursor: no-drop;
 }
 
 .book__ratings {
   margin-bottom: 8px;
   color: #fabf2a;
+  
 }
 
 .book__price--normal {
